@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to My Interactive Site</h1>
+
+  <!-- Image Carousel -->
+  <div class="carousel">
+    <img id="carouselImage" src="https://via.placeholder.com/400x200" alt="Image Carousel">
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <!-- Quiz -->
+  <div class="quiz">
+    <h2>Quiz: What is 2 + 2?</h2>
+    <button onclick="checkAnswer(2)">2</button>
+    <button onclick="checkAnswer(4)">4</button>
+    <button onclick="checkAnswer(5)">5</button>
+    <p id="quizResult"></p>
+  </div>
+
+  <!-- API Data -->
+  <div class="api">
+    <h2>Random Joke:</h2>
+    <button onclick="fetchJoke()">Get Joke</button>
+    <p id="joke"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
